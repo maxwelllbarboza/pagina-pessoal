@@ -31,7 +31,7 @@ export default function Home() {
     Tecnologias
     <Typography variant="h5" mt={5} fontWeight="bold">Tecnologias</Typography>
     
-    {/* <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={{ xs: 2, md:3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
         <Grid size={{ xs: 2, sm: 4, md: 4 }}>
           <Card sx={{ px: 2, py: 1, textAlign: 'center', backgroundColor: '#f5f5f5' }}>
@@ -39,7 +39,7 @@ export default function Home() {
           </Card>
         </Grid>
       </Grid>
-    </Box> */}
+    </Box>
     
 
     {/* Projetos */}
