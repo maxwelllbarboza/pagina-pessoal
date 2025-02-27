@@ -1,8 +1,9 @@
 import * as React from 'react';
 import type { Metadata } from "next";
+import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import { Box } from '@mui/material';
-
+import theme from '@/theme/theme';
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -29,7 +30,7 @@ export default function RootLayout({
             >
               {children}
             </Box>
-           
+            </ThemeProvider>
       </body>
     </html>
   );
