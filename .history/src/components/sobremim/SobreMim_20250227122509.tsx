@@ -26,8 +26,7 @@ export default function SobreMim(){
                         </h1>
                         
                         <p className="text-gray-400 mb-8 text-center lg:text-left">
-                            Especializado em criar soluções digitais elegantes e eficientes, 
-                            transformo ideias em produtos inovadores com tecnologia de ponta. 
+                        Especializado em criar soluções digitais elegantes e eficientes, transformo ideias em produtos inovadores com tecnologia de ponta. 
                         </p>
 
                         <div className="flex flex-col items-center gap-4 lg:flew-row">
