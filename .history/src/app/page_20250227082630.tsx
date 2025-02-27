@@ -1,6 +1,7 @@
-import { Container, Typography, Card, Avatar, Box, IconButton } from '@mui/material';
+import { Container, Typography, Card, CardContent, CardMedia, Avatar, Box, IconButton } from '@mui/material';
 import { GitHub, LinkedIn, Email } from '@mui/icons-material';
 import Grid from '@mui/material/Grid2';
+
 import { motion } from 'framer-motion';
 
 const skills = ['Kotlin', 'Node.js', 'Python', 'React', 'Next.js', 'AWS', 'SQL'];
@@ -28,24 +29,25 @@ export default function Home() {
       </Box>
     </Box>
 
-    Tecnologias
+    {/* Tecnologias */}
     <Typography variant="h5" mt={5} fontWeight="bold">Tecnologias</Typography>
     
-    <Box sx={{ flexGrow: 1 }}>
-      <Grid container spacing={{ xs: 2, md:3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
-        <Grid size={{ xs: 2, sm: 4, md: 4 }}>
-          <Card sx={{ px: 2, py: 1, textAlign: 'center', backgroundColor: '#f5f5f5' }}>
-            <Typography variant="body1">dffdgf</Typography>
-          </Card>
+    <Grid container spacing={{ xs: 2}} columns={{ xs: 4, sm: 8, md: 12 }} >
+      {skills.map((skill, index) => (
+        <Grid key={index}>
+          <motion.div whileHover={{ scale: 1.1 }}>
+            <Card sx={{ px: 2, py: 1, textAlign: 'center', backgroundColor: '#f5f5f5' }}>
+              <Typography variant="body1">{skill}</Typography>
+            </Card>
+          </motion.div>
         </Grid>
-      </Grid>
-    </Box>
-    
+      ))}
+    </Grid>
 
     {/* Projetos */}
     <Typography variant="h5" mt={5} fontWeight="bold">Projetos</Typography>
     
-    {/* <Grid container spacing={3} mt={2}>
+    <Grid container spacing={3} mt={2}>
       
       {projects.map((project, index) => (
         <Grid  key={index}>
@@ -60,7 +62,7 @@ export default function Home() {
           </motion.div>
         </Grid>
       ))}
-    </Grid> */}
+    </Grid>
   </Container>
   );
 }

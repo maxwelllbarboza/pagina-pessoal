@@ -1,6 +1,6 @@
 import { Container, Typography, Card, Avatar, Box, IconButton } from '@mui/material';
 import { GitHub, LinkedIn, Email } from '@mui/icons-material';
-import Grid from '@mui/material/Grid2';
+import Grid2 from '@mui/material/Grid2';
 import { motion } from 'framer-motion';
 
 const skills = ['Kotlin', 'Node.js', 'Python', 'React', 'Next.js', 'AWS', 'SQL'];

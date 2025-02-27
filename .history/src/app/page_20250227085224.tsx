@@ -33,11 +33,15 @@ export default function Home() {
     
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={{ xs: 2, md:3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
-        <Grid size={{ xs: 2, sm: 4, md: 4 }}>
-          <Card sx={{ px: 2, py: 1, textAlign: 'center', backgroundColor: '#f5f5f5' }}>
-            <Typography variant="body1">dffdgf</Typography>
-          </Card>
-        </Grid>
+        {skills.map((skill, index) => (
+          <Grid key={index} size={{ xs: 2, sm: 4, md: 4 }}>
+            <motion.div whileHover={{ scale: 1.1 }}>
+              <Card sx={{ px: 2, py: 1, textAlign: 'center', backgroundColor: '#f5f5f5' }}>
+                <Typography variant="body1">{skill}</Typography>
+              </Card>
+            </motion.div>
+          </Grid>
+        ))}
       </Grid>
     </Box>
     
