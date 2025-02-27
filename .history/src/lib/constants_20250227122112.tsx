@@ -1,4 +1,4 @@
-import { Github, Linkedin } from "lucide-react";
+import { Github, Linkedin, Youtube } from "lucide-react";
 
 
 export const socialLinks = [

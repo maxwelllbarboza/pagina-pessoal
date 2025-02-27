@@ -83,6 +83,7 @@ export default function SobreMim(){
                         />
                     </div>
                 </motion.div>
+
             </div>
         </section>
        
