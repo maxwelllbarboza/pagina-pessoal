@@ -72,7 +72,7 @@ export default function SobreMim(){
                         duration: 0.8,
                         ease: "easeOut"
                     }}
-                    className="relative flex-1 mt-6"
+                    className="relative flex-1 mt"
                 >
                     <div className="w-[350px] h-[350px] relative mx-auto">
                         <Image

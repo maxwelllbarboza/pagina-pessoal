@@ -30,15 +30,15 @@ export default function SobreMim(){
                             transformo ideias em produtos inovadores com tecnologia de ponta. 
                         </p>
 
-                        <div className="flex flex-col items-center gap-4 lg:flew-row">
+                        <div className="flex flex-col items-center gap-4 flew-row">
                             <motion.a
                                 href="https://drive.google.com/file/d/1c9fbR7-gD7KuZf_IrKNTMf83GRyts3kQ/view?usp=sharing"
                                 download
                                 whileHover={{scale: 1.05}}
                                 whileTap={{scale: 0.95}}
-                                className="w-full lg:w-lg bg-emerald-400 text-gray-900 py-3 
-                                rounded-4xl flex items-center 
-                                justify-center gap-2 hover:bg-emerald-300 my-8"
+                                className="w-full lg:w-auto bg-emerald-400 text-gray-900 py-3 
+                                rounded-full flex items-center 
+                                justify-center gap-2 hover:bg-emerald-300"
                             >
                                 <Download size={20}/>
                                 Download
@@ -72,7 +72,7 @@ export default function SobreMim(){
                         duration: 0.8,
                         ease: "easeOut"
                     }}
-                    className="relative flex-1 mt-6"
+                    className="relative flex-1"
                 >
                     <div className="w-[350px] h-[350px] relative mx-auto">
                         <Image

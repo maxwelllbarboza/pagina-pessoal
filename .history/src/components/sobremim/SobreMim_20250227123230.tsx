@@ -37,7 +37,7 @@ export default function SobreMim(){
                                 whileHover={{scale: 1.05}}
                                 whileTap={{scale: 0.95}}
                                 className="w-full lg:w-lg bg-emerald-400 text-gray-900 py-3 
-                                rounded-4xl flex items-center 
+                                rounded-full flex items-center 
                                 justify-center gap-2 hover:bg-emerald-300 my-8"
                             >
                                 <Download size={20}/>
@@ -72,7 +72,7 @@ export default function SobreMim(){
                         duration: 0.8,
                         ease: "easeOut"
                     }}
-                    className="relative flex-1 mt-6"
+                    className="relative flex-1"
                 >
                     <div className="w-[350px] h-[350px] relative mx-auto">
                         <Image
